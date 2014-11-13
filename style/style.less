@@ -334,7 +334,7 @@ header {
         text-transform: uppercase;
         padding: 20px;
         text-align: center;
-        
+
             small {
                 font-size: 30px;
                 font-weight: bold;
@@ -385,7 +385,14 @@ header {
         }
 
         a {
+            color: @color-heading-link;
             text-decoration: none;
+            text-align: center;
+            -webkit-transition: color 0.15s ease-in-out;
+
+            &:hover {
+                color: darken(@color-heading-link, 10%);
+            }
         }
     }
 }
