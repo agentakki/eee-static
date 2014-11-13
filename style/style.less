@@ -13,6 +13,7 @@
 @color-header-text: white;
 @color-button-primary: @blue;
 @color-button-secondary: @orange;
+@color-button-tertiary: @yellow;
 @color-heading-text: black;
 @color-heading-link: @blue;
 
@@ -194,6 +195,24 @@ header {
 
             &.register {
                 @color: @color-button-primary;
+                background-color: @color;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom: 3px solid darken(@color, 10%);
+
+                &:hover {
+                    background-color: darken(@color, 5%);
+                    border-bottom: 3px solid darken(@color, 20%);
+                }
+                
+                &:active {
+                    background-color: lighten(@color, 5%);
+                    border-bottom: 3px solid darken(@color, 5%);
+                }
+            }
+
+            &.resume {
+                @color: @color-button-tertiary;
                 background-color: @color;
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
