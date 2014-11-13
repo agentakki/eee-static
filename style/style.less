@@ -357,4 +357,43 @@ header {
     }
 }
 
+.contact {
+    .clearfix();
+    background-color: @color-about-background;
+    padding: 20px 0 50px;
+    .contact-block {
+        float: left;
+        width: 100%;
+        padding: 40px 0 20px;
+        margin: 0;
+
+        h3 {
+            color: @color-heading-text;
+            padding: 0 20px;
+            margin: 0;
+            font-size: 80px;
+            line-height: 30px;
+            font-weight: 100;
+            font-family: @font-heading;
+            text-transform: uppercase;
+
+            small {
+                font-size: 30px;
+                font-weight: bold;
+                white-space: nowrap;
+            }
+        }
+
+        p {
+            padding: 20px 20px 0;
+            margin: 0;
+            line-height: 1.5em;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
 @import 'mobile.less';
